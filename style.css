@@ -95,7 +95,7 @@ font-size: 1.2rem;
     top: 50px;
     color: rgb(0, 0, 0);
     width: 45vh;
-    height: 20px;
+    height: 25px;
     color:linear-gradient(rgb(235, 0, 0),blue);
     text-align: center;
     background:linear-gradient( gray,white);
@@ -114,21 +114,32 @@ font-size: 1.2rem;
     color: white;
     text-align: center;
 
-    background:linear-gradient(rgb(8, 8, 8),rgb(57, 58, 57),rgb(5, 5, 5));
-    padding-top: 15px;
-    padding-bottom: 15px;
+    background:linear-gradient(rgb(54, 50, 50),rgb(75, 70, 70),rgb(65, 62, 62));
+    padding-top: 13px;
+    padding-bottom: 20px;
     transition:.5s;
     }
 
+    .far{
+        float: left;
+        padding-left: 15px;
+    }
 
     .list-of-vertical-nav-bar {
 
         display:flex;
         flex-direction: column;
         width: 15vw;
-        align-items: center;
+        align-items: flex-start;
     }
 
+
+    img.vertical-nav-icon {
+        width: 19px;
+        height: 17px;
+        float: left;
+        padding-left: 13px;
+    }
 
 @media screen and(max-width:900px){
 
