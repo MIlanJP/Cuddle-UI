@@ -283,6 +283,10 @@ const list=[
 
 
 
+
+
+
+
 // let Tableheader=['Name','Email','Status','Role','Last login','Permission'];
 
 // let flexContainer=document.querySelector('#flex-container');
@@ -292,8 +296,35 @@ const list=[
 //         let theader=document.createElement('div');
 //         theader.innerText=header;
 //         flexContainer.appendChild(theader);
-//         console.log(header);
-//     }
+//         console.log(heashow-auth-list
    
 // )
 // let table=document.querySelector('table')
+
+console.log("Hey");
+
+let authDropdown=document.querySelector('.show-auth-list');
+console.log(authDropdown);
+
+
+let authclickbutton=authDropdown.addEventListener('click',function(){
+    if( authDropdown.id==='show-auth-list-block'){
+       authDropdown.id='show-auth-list-display'
+    }else{
+        authDropdown.id='show-auth-list-block'
+    }
+})
+
+
+// let authClick=authDropdown.addEventListener('click', function(){
+//     console.log("function getting called");
+//    if(document.getElementById('show-auth-list-block')===null){
+//         document.querySelector('.show-auth-list').id='show-auth-list-block';
+//         console.log("printing top one");
+//         // document.querySelector('.show-auth-list').style.backgroundColor='#363A43';
+//    }else{
+//     console.log("printing top one");
+//     document.querySelector('.show-auth-list').id='show-auth-list-display';
+//     // document.querySelector('.show-auth-list').style.backgroundColor='rgb(161, 160, 161)';
+// }
+// })

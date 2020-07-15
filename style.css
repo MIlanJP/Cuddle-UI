@@ -17,12 +17,13 @@ a{
     display:flex;
 width:80vw;
 position: absolute;
-left:20vw;
+border-top-right-radius: 20px;
+left:17vw;
 /* height:50px; */
 }
 
 .ask-input{
-    width:80%;
+    width:100%;
     height:50px;
     font-size: 1.2rem;
 }
@@ -139,14 +140,114 @@ font-size: 1.2rem;
         height: 17px;
         float: left;
         padding-left: 13px;
+        filter: sepia(100%);
+        filter:invert()
     }
+
+
+       
+    .auth-btn{
+        margin-top: 2px;
+        position: relative;
+        top: 50px;
+        color: gray;
+        width: 100%;
+        height: 40px;
+        color: white;
+        text-align: center;
+        letter-spacing: .0rem;
+        font-family: Roboto;
+        background:linear-gradient(rgb(54, 50, 50),rgb(75, 70, 70),rgb(65, 62, 62));
+        padding-top: 13px;
+        padding-bottom: 19px;
+        transition:.5s;
+        font-size: 1rem;
+        outline: none;
+        border: 0;
+    }
+    
+    .auth-btn:hover{
+        margin-top: 2px;
+        position: relative;
+        top: 50px;
+        float: right;
+        color: gray;
+        width: 120%;
+        height: 60px;
+        color:linear-gradient(rgb(235, 0, 0),blue);
+        text-align: center;
+        background:linear-gradient( gray,white);
+        transition:.5s;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 1.3rem;
+        letter-spacing: .2rem;
+        font-family: Roboto,sans-serif;
+        outline: none;
+        border: 0;
+    }
+    
+    
+    /* #show-auth-list-block{
+        display: none;
+    } */
+    
+                #show-auth-list-display{
+                    color:black;
+                    position: relative;
+                    display:flex;
+                    flex-direction:column;
+                    top:50px;
+                    width:15vw;
+                    align-items:center;
+                    background-color:black;
+                    left:0vw;
+                    transition:.5s;
+                }
+    
+     
+    
+    .authlist-content{
+        height:30px;
+        width: 100%;
+        text-align:center;
+        padding-top: 19px;
+        background:linear-gradient(rgb(0, 0, 0),rgb(47, 46, 46));
+        border-top:1px solid white;
+        color: rgb(134, 134, 134);
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        letter-spacing: .1rem;
+        font-family: poppins;
+        transition:.5s;
+    
+    }
+    
+        
+    .authlist-content:hover{
+        height:40px;
+        width: 130%;
+        text-align:center;
+        padding-top: 19px;
+        background:linear-gradient(rgb(0, 0, 0),rgb(255, 243, 243));
+        border-top:1px solid white;
+        color: rgba(255, 0, 0, 0.6);
+        font-size: 1.6rem;
+        line-height: 1.5rem;
+        letter-spacing: .3rem;
+        font-family: Roboto;
+        transition:.5s;
+        border-radius: 1rem;
+    
+    }
+
 
 @media screen and(max-width:900px){
 
 }
 
 /* *******************************Media query1********************************** */
-@media screen and (max-width:750px){
+@media screen and (max-width:768px){
 
     .top-ask-field{
         width:115vw;
@@ -188,8 +289,11 @@ font-size: 1.2rem;
     text-align: center;
     background:linear-gradient( gray,white);
     transition:.5s;
-    padding-top: 19px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    font-family: Roboto,sans-serif;
 }
 
 .list-of-vertical-nav-content {
@@ -202,6 +306,8 @@ font-size: 1.2rem;
     color: white;
     text-align: center;
     border-radius: 15px;
+    letter-spacing: .1rem;
+    font-family: Roboto;
     background:linear-gradient(rgb(8, 8, 8),rgb(57, 58, 57),rgb(57, 57, 93));
     padding-top: 19px;
     padding-bottom: 10px;
@@ -209,12 +315,113 @@ font-size: 1.2rem;
 }
 
             .list-of-vertical-nav-bar {
+                transition:.5s;
 
                 display:flex;
                 flex-direction: column;
                 width: 100vw;
                 align-items: center;
             }
+
+            .ask-input{
+                width:80%;
+                height:50px;
+                font-size: 1.2rem;
+            }
+
+
+.auth-btn{
+    margin-top: 2px;
+    position: relative;
+    top: 50px;
+    color: gray;
+    width: 100vw;
+    height: 55px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    letter-spacing: .1rem;
+    font-family: Roboto;
+    background:linear-gradient(rgb(8, 8, 8),rgb(57, 58, 57),rgb(57, 57, 93));
+    padding-top: 19px;
+    padding-bottom: 19px;
+    transition:.5s;
+    font-size: 1rem;
+    outline: none;
+    
+}
+
+.auth-btn:hover{
+    margin-top: 2px;
+    position: relative;
+    top: 50px;
+    color: gray;
+    width: 100vw;
+    height: 60px;
+    color:linear-gradient(rgb(235, 0, 0),blue);
+    text-align: center;
+    background:linear-gradient( gray,white);
+    transition:.5s;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    font-family: Roboto,sans-serif;
+    outline: none;
+}
+
+
+#show-auth-list-block{
+    display: none;
+}
+
+            #show-auth-list-display{
+                color:black;
+                position: relative;
+                display:flex;
+                flex-direction:column;
+                top:50px;
+                width:80vw;
+                align-items:center;
+                background-color:black;
+                left:10vw;
+                transition:.5s;
+            }
+
+ 
+
+.authlist-content{
+    height:40px;
+    width: 100%;
+    text-align:center;
+    padding-top: 19px;
+    background:linear-gradient(rgb(0, 0, 0),rgb(47, 46, 46));
+    border-top:1px solid white;
+    color: rgb(134, 134, 134);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: .1rem;
+    font-family: poppins;
+    transition:.5s;
+
+}
+
+    
+.authlist-content:hover{
+    height:40px;
+    width: 100%;
+    text-align:center;
+    padding-top: 19px;
+    background:linear-gradient(rgb(0, 0, 0),rgb(255, 243, 243));
+    border-top:1px solid white;
+    color: rgba(255, 0, 0, 0.6);
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    letter-spacing: .3rem;
+    font-family: Roboto;
+    transition:.5s;
+
+}
 
     }
 
@@ -227,7 +434,7 @@ font-size: 1.2rem;
 
 
 @media screen and (max-width:992px) 
-and (min-width:750px)
+and (min-width:768px)
 {
     .display-user-type{
     
@@ -256,7 +463,12 @@ and (min-width:750px)
     }
 
 
-        
+    .ask-input{
+        width:80%;
+        height:50px;
+        font-size: 1.2rem;
+    }
+
 
 }
 
@@ -285,15 +497,31 @@ margin-top: 2px;
 position: relative;
 top: 50px;
 color: rgb(0, 0, 0);
-width: 45vh;
-height: 24px;
+width: 50vh;
+height: 30px;
 color:linear-gradient(rgb(235, 0, 0),blue);
 text-align: center;
 background:linear-gradient( gray,white);
 transition:.5s;
-padding-top: 19px;
-padding-bottom: 10px;
+padding-top: 5px;
+padding-bottom: 20px;
 }
+
+.list-of-vertical-nav-content:first-child:hover {
+    margin-top: 2px;
+    position: relative;
+    top: 50px;
+    color: rgb(0, 0, 0);
+    width: 50vh;
+    height: 30px;
+    color:linear-gradient(rgb(235, 0, 0),blue);
+    text-align: center;
+    background:linear-gradient( gray,white);
+    transition:.5s;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    }
+    
 
 .list-of-vertical-nav-content {
 margin-top: 2px;
@@ -301,14 +529,15 @@ position: relative;
 top: 50px;
 color: gray;
 width: 100%;
-height: 24px;
+height: 20px;
 color: white;
 text-align: center;
 border-radius: 15px;
 background:linear-gradient(rgb(8, 8, 8),rgb(57, 58, 57),rgb(57, 57, 93));
 padding-top: 19px;
-padding-bottom: 10px;
+padding-bottom: 19px;
 transition:.5s;
+font-family: Roboto;
 }
 
         .list-of-vertical-nav-bar {
@@ -318,6 +547,110 @@ transition:.5s;
             width: 20vw;
             align-items: center;
         }
+
+        .ask-input{
+            width:80%;
+            height:50px;
+            font-size: 1.2rem;
+        }
+
+
+        
+.auth-btn{
+    margin-top: 2px;
+    position: relative;
+    top: 50px;
+    color: gray;
+    width: 100%;
+    height: 55px;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    letter-spacing: .0rem;
+    font-family: Roboto;
+    background:linear-gradient(rgb(8, 8, 8),rgb(57, 58, 57),rgb(57, 57, 93));
+    padding-top: 19px;
+    padding-bottom: 25px;
+    transition:.5s;
+    font-size: 1rem;
+    outline: none;
+    
+}
+
+.auth-btn:hover{
+    margin-top: 2px;
+    position: relative;
+    top: 50px;
+    float: right;
+    color: gray;
+    width: 135%;
+    height: 60px;
+    color:linear-gradient(rgb(235, 0, 0),blue);
+    text-align: center;
+    background:linear-gradient( gray,white);
+    transition:.5s;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+    letter-spacing: .1rem;
+    font-family: Roboto,sans-serif;
+    outline: none;
+}
+
+
+/* #show-auth-list-block{
+    display: none;
+} */
+
+            #show-auth-list-display{
+                color:black;
+                position: relative;
+                display:flex;
+                flex-direction:column;
+                top:50px;
+                width:20vw;
+                align-items:center;
+                background-color:black;
+                left:0vw;
+                transition:.5s;
+            }
+
+ 
+
+.authlist-content{
+    height:40px;
+    width: 100%;
+    text-align:center;
+    padding-top: 19px;
+    background:linear-gradient(rgb(0, 0, 0),rgb(47, 46, 46));
+    border-top:1px solid white;
+    color: rgb(134, 134, 134);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    letter-spacing: .1rem;
+    font-family: poppins;
+    transition:.5s;
+
+}
+
+    
+.authlist-content:hover{
+    height:40px;
+    width: 130%;
+    text-align:center;
+    padding-top: 19px;
+    background:linear-gradient(rgb(0, 0, 0),rgb(255, 243, 243));
+    border-top:1px solid white;
+    color: rgba(255, 0, 0, 0.6);
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    letter-spacing: .3rem;
+    font-family: Roboto;
+    transition:.5s;
+    border-radius: 1rem;
+
+}
+
 }
 
 
