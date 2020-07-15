@@ -307,7 +307,7 @@ let authDropdown=document.querySelector('.show-auth-list');
 console.log(authDropdown);
 
 
-let authclickbutton=authDropdown.addEventListener('click',function(){
+let authclickbutton=authDropdown.addEventListener('onclick',function(){
     if( authDropdown.id==='show-auth-list-block'){
        authDropdown.id='show-auth-list-display'
     }else{
