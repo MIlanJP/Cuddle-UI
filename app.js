@@ -283,17 +283,17 @@ const list=[
 
 
 
-let Tableheader=['Name','Email','Status','Role','Last login','Permission'];
+// let Tableheader=['Name','Email','Status','Role','Last login','Permission'];
 
-let flexContainer=document.querySelector('#flex-container');
+// let flexContainer=document.querySelector('#flex-container');
 
-Tableheader.forEach(
-    header => {
-        let theader=document.createElement('div');
-        theader.innerText=header;
-        flexContainer.appendChild(theader);
-        console.log(header);
-    }
+// Tableheader.forEach(
+//     header => {
+//         let theader=document.createElement('div');
+//         theader.innerText=header;
+//         flexContainer.appendChild(theader);
+//         console.log(header);
+//     }
    
-)
-let table=document.querySelector('table')
+// )
+// let table=document.querySelector('table')
