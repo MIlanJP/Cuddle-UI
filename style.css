@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@500;900&display=swap');
+
+
+.root{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    font-size:1rem;
+}
+
+.top-ask-field{
+    display:flex;
+width:80vw;
+position: absolute;
+left:20vw;
+/* height:50px; */
+}
+
+.ask-input{
+    width:80%;
+    height:50px;
+    font-size: 1.2rem;
+}
+
+button.ask-button {
+position:relative;
+widows: 30px;
+height:50px;
+font-size: 1.2rem;
+}
+
+@media screen and (max-width:750px){
+
+    .top-ask-field{
+        width:100vw;
+        left:10px;
+       
+        }
+
+}
+
