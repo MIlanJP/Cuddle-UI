@@ -38,6 +38,8 @@ font-size: 1.2rem;
 }
 
 .vertical-nav-bar{
+    z-index: -1;
+    position: fixed;
     border-top-left-radius: 20px;
     width:15vw;
     height:95vh;
@@ -45,7 +47,6 @@ font-size: 1.2rem;
     color:white;
     border-bottom-left-radius: 20px;
  transition:.5s;
-
 }
 
 .display-user-type{
@@ -277,6 +278,18 @@ font-size: 1.2rem;
 /* *******************************Media query1********************************** */
 @media screen and (max-width:768px){
 
+
+    .vertical-nav-bar{
+        z-index: -1;
+        border-top-left-radius: 20px;
+        width:15vw;
+        height:95vh;
+        background-color:#25282D;
+        color:white;
+        border-bottom-left-radius: 20px;
+     transition:.5s;
+    }
+
     .top-ask-field{
         width:115vw;
         left:10px;
@@ -292,7 +305,7 @@ font-size: 1.2rem;
 
         .vertical-nav-bar{
             width:100vw;
-           height:53vh;
+           height:45vh;
             background-color:#25282D;
             color:white;
            border-radius: 15px;
@@ -431,7 +444,6 @@ font-size: 1.2rem;
     letter-spacing: .1rem;
     font-family: poppins;
     transition:.5s;
-
 }
 
     
@@ -455,7 +467,7 @@ font-size: 1.2rem;
     display:flex;
     flex-direction: row;
     position: absolute;
-    top:4vh;
+    top:1vh;
     font-size: 1.25rem;
     letter-spacing: .1rem;
     font-family: Roboto;
@@ -473,11 +485,54 @@ font-size: 1.2rem;
    top:3px;
    left:-5px
 }
+
 .fa-chevron-right{
 position: relative;
 padding-left: 10px;
 top:3px;
 }
+
+.main-container {
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+.search-user{
+  height:40px;
+  width:100%;
+}
+
+.search-user-form{
+    display:flex;
+    flex-direction: row;
+    /* align-items:center; */
+}
+
+
+i.fa-search,.search {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    left: 2.5vw;
+    top: 0px;
+
+}
+
+
+
+.search-user-input{
+    position: relative;
+    width: 80%;
+    left:10vw;
+    height: 30px;
+    outline:0;
+    border-radius: 15px;
+}
+
+
     }
 
 
