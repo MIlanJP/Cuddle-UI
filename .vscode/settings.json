@@ -1,0 +1,7 @@
+{
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.preferredDarkColorTheme": "Abyss",
+    "workbench.preferredHighContrastColorTheme": "Abyss",
+    "files.autoSave": "afterDelay"
+}
